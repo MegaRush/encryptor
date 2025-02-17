@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <header>
+        <div class="buttons">
+            <button id="but1" onclick="shifr();">
+                Зашифровать
+            </button>
+            <button id="but2" onclick="unshifr();">
+                Расшифровать
+            </button>
+    </header>
+    <main>
+        <div class="maines">
+            <div id="runzag">Зашифровка</div>
+            <textarea type="text" placeholder="Введите текст" id="input"></textarea>
+            <button id="run" onclick="run()">Выполнить</button>
+        </div>
+    </main>
+
+    <script>
+        const textarea = document.getElementById('input');
+
+        textarea.addEventListener('input', function () {
+            this.style.height = 'auto';
+            this.style.height = this.scrollHeight + 'px';
+        });
+    </script>
+    
+    
+</body>
+</html>
